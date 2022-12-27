@@ -1,10 +1,10 @@
-# Nuxt 3 Cache Keys
-Nuxt3-Module, that provides a system to set cache-keys for later use in e.g. a full-page cache like Varnish or Fastly.
+# Nuxt Cache Keys
+Nuxt module, that provides a system to set cache-keys for later use in e.g. a full-page cache like Varnish or Fastly.
 
 ## Installation
-- NPM: `npm install nuxt3-cache-keys`
-- pnpm: `pnpm install nuxt3-cache-keys`
-- Yarn: `yarn add nuxt3-cache-keys`
+- NPM: `npm install nuxt-cache-keys`
+- pnpm: `pnpm install nuxt-cache-keys`
+- Yarn: `yarn add nuxt-cache-keys`
 
 ## Usage
 
@@ -13,7 +13,7 @@ Add the module in your `nuxt.config.ts`:
 ```js
 {
     modules: [
-      '@mothership-gmbh/nuxt3-cache-keys'
+      'nuxt-cache-keys'
     ],
       
     cachingHeaders: {
