@@ -10,7 +10,10 @@ export interface ModuleOptions {
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt3-cache-keys',
-    configKey: 'cachingHeaders'
+    configKey: 'cachingHeaders',
+    compatibility: {
+      nuxt: '^3.0.0'
+    }
   },
   defaults: {
     cacheKeyHeader: null,
