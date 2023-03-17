@@ -5,12 +5,12 @@ export default defineNuxtPlugin((nuxtApp) => {
     keys: new Set<string>()
   }
 
-  const addCacheKeys = (keys: string|string[]) => {
+  const addCacheKeys = (keys: string | string[]) => {
     const keysToAdd = !Array.isArray(keys) ? [keys] : keys
     keysToAdd.forEach(key => cache.keys.add(key))
   }
 
-  const getCacheKeys = () : string[] => Array.from(cache.keys.values())
+  const getCacheKeys = (): string[] => Array.from(cache.keys.values())
 
   const cacheApi = { addCacheKeys, getCacheKeys }
 

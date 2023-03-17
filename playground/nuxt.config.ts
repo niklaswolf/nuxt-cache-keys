@@ -1,9 +1,6 @@
-import { defineNuxtConfig } from 'nuxt/config'
-import CacheKeys from '..'
-
 export default defineNuxtConfig({
   modules: [
-    CacheKeys
+    '../src/module'
   ],
   cachingHeaders: {
     cacheKeyHeader: 'xkeys'
