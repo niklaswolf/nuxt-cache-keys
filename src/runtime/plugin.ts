@@ -21,7 +21,9 @@ export default defineNuxtPlugin((nuxtApp) => {
         console.warn('No cacheKeyHeader provided in configuration, skipping setting the header')
         return
       }
-      renderContext.ssrContext.event.res.setHeader(cacheKeyHeader, getCacheKeys().join(cacheKeySeparator))
+      if (!renderContext.ssrContext.event.node.res.headersSent) {
+        renderContext.ssrContext.event.node.res.setHeader(cacheKeyHeader, getCacheKeys().join(cacheKeySeparator))
+      }
     }
   })
 

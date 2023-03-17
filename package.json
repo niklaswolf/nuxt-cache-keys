@@ -1,7 +1,7 @@
 {
   "name": "nuxt-cache-keys",
   "author": "Niklas Wolf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -19,6 +19,7 @@
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
+    "lint": "eslint .",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
